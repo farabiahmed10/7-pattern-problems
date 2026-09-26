@@ -1,0 +1,96 @@
+1) 
+*
+**
+***
+****
+*****
+for(i=1; i<=5; i++){
+    for(j=1; j<=i; j++){
+        cout<< "*"; }
+     cout<<endl;}
+2) 
+    *
+   **
+  ***
+ ****
+*****  n = 5;
+    for (int i=1; i<= n; i++){
+        for(int j=1; j<= n; j++){
+           if(j > n-i) 
+              cout<<"*";
+           else 
+              cout<<" ";
+       }
+    cout<< endl;}
+
+3) 
+*****
+ ****
+  ***
+   **
+    *
+    for (int i=0; i< n; i++){
+        for(int j=0; j<= n; j++){
+           if(j >= i) 
+              cout<<"*";
+           else 
+              cout<<" ";
+       }
+    cout<< endl;}
+4) 
+    * 
+   ***  
+  ***** 
+ *******
+*********  n = 5;
+sp = n - (i+1)    
+st = 2*n - 2*sp 
+//in every iteration print sp, st, sp
+
+5) 
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+sp = i 
+st = 2n - 2i 
+//in every iteration print sp, st, sp 
+
+6)  *    
+   ***   
+  *****  
+ ******* 
+*********
+ ******* 
+  *****  
+   ***   
+    *     
+    for (int i = 1; i <= n*2-1; i++) {   
+          int sp  = abs(n - i);   //abs make neg values pos
+          int st  = (2n - 2sp) - 1;
+
+        for (int j = 0; j < sp ; j++) cout << " "; 
+        for (int j = 0; j < st ; j++) cout << "*"; 
+        for (int j = 0; j < sp ; j++) cout << " ";
+        cout << endl;
+    }
+7)  
+*********          
+ *******          
+  *****  
+   ***   
+    *    
+   ***   
+  *****  
+ ******* 
+********* 
+    for (int i = 0; i <= n*2-1; i++) {    
+        if(i==n) continue;
+          int st = abs((n*2-1)-2i);
+          int sp = ((n*2-1) - st) / 2;
+        for (int j = 0; j < sp ; j++) cout << " "; 
+        for (int j = 0; j < st ; j++) cout << "*"; 
+        for (int j = 0; j < sp ; j++) cout << " ";
+        cout << endl;
+    }
