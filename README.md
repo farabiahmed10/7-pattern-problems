@@ -1,2 +1,2 @@
 # problems_and_-algorithom
-i share my problems solving codes, algorithms and data structures concepts and solution. Unique problem ideas and their solutions
+i share my problem solving ideas in this repository with Explanations, algorithms and data structures concepts with their different solution and Unique problem ideas.
